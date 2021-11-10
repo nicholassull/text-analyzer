@@ -24,6 +24,8 @@ Test: "It should not count numbers as words."
 Code: wordCounter("hi there 77 19");
 Expected Output: 2
 
+<!-- Second function to test: -->
+
 Describe: numberOfOccurrencesInText()
 
 Test: "It should return 0 occurrences of a word for an empty string."
@@ -68,6 +70,13 @@ const text = "Red! Red. I like red, green, and yellow.";
 const word = "Red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
+
+Test: "If an empty string is passed in as a word, it should return 0."
+Code:
+const word = "";
+const text = "red RED Red!";
+wordCounter(word, text);
+Expected Output: 0
 
 
 # _{Application Name}_
