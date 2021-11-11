@@ -78,6 +78,14 @@ const text = "red RED Red!";
 wordCounter(word, text);
 Expected Output: 0
 
+<!-- Offensive Word Function Tests -->
+Test: "If word === "zoinks" function should return 0"
+
+Code:
+const text = "zoinks";
+const word = "zoinks";
+offensiveWords(word, text);
+Expected Output: 0
 
 # _{Application Name}_
 

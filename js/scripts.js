@@ -46,6 +46,21 @@ function numberOfOccurrencesInText(word, text) {
 
 }
 
+function offensiveWords(text) {
+  const textArray = text.toLowerCase().split(" ");
+  const offensiveWords = ["zoinks", "muppeteer", "biffaroni", "loopdaloop"]
+  let newArray = []
+  textArray.forEach(function(word) {
+    if (!word.includes(offensiveWords[0] || offensiveWords[1] || offensiveWords[2] || offensiveWords[3])) {
+      newArray.push(word);
+    }
+  });
+  return newArray.join(" ");
+}
+
+
+
+
 //  UI Logic
 $(document).ready(function(){
   $("form#word-counter").submit(function(event){
